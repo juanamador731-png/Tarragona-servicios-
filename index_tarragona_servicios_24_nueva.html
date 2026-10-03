@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tarragona Servicios 24: limpieza, mantenimiento, montajes, portes y pequeños servicios para particulares y empresas en Tarragona y alrededores. Pide presupuesto por WhatsApp.">
+  <meta name="keywords" content="limpieza Tarragona, limpieza pisos Tarragona, limpieza fin de alquiler, limpieza locales Tarragona, limpieza restaurantes, limpieza oficinas, montaje muebles Tarragona, portes Tarragona, pequeños servicios Tarragona">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:title" content="Tarragona Servicios 24 | Limpieza y Servicios">
+  <meta property="og:description" content="Limpieza, mantenimiento, montajes y servicios para particulares y empresas en Tarragona y alrededores.">
+  <meta property="og:type" content="website">
+  <title>Tarragona Servicios 24 | Limpieza, Mantenimiento y Servicios</title>
+
+  <style>
+    :root{
+      --navy:#0b1220;
+      --navy2:#111c31;
+      --blue:#2563eb;
+      --blue2:#1d4ed8;
+      --green:#16a34a;
+      --green2:#15803d;
+      --light:#f5f7fb;
+      --white:#fff;
+      --text:#172033;
+      --muted:#667085;
+      --line:#e7eaf0;
+      --shadow:0 18px 50px rgba(15,23,42,.10);
+      --radius:20px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--text);background:var(--light);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .container{width:min(1160px,92%);margin:auto}
+    .topbar{background:#070d18;color:#cbd5e1;font-size:13px;padding:8px 0}
+    .topbar .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:blur(12px)}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{display:flex;align-items:center;gap:11px;font-weight:900}
+    .logo img{width:50px;height:50px;object-fit:contain;border-radius:12px}
+    .logo-main{font-size:18px;line-height:1.1}
+    .logo-sub{font-size:10px;font-weight:700;color:var(--muted);letter-spacing:1.1px;margin-top:4px}
+    .navlinks{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:700}
+    .navlinks a:hover{color:var(--blue)}
+    .nav-cta{background:var(--green);color:#fff;padding:11px 16px;border-radius:12px}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:78px 0 82px}
+    .hero:before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:rgba(37,99,235,.18);right:-180px;top:-180px;filter:blur(5px)}
+    .hero:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(22,163,74,.12);left:-120px;bottom:-130px}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;color:#bfdbfe;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:1.8px;margin-bottom:16px}
+    .eyebrow:before{content:"";width:28px;height:2px;background:#60a5fa}
+    h1{font-size:clamp(40px,6vw,68px);line-height:1.02;letter-spacing:-2px;margin-bottom:22px}
+    .hero h1 span{color:#60a5fa}
+    .hero-lead{font-size:19px;color:#d9e2ef;max-width:680px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 19px;border-radius:13px;font-weight:800;transition:.2s;cursor:pointer}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:#fff;color:var(--navy)}
+    .btn-green{background:var(--green);color:#fff}
+    .btn-green:hover{background:var(--green2)}
+    .btn-outline{border:1px solid rgba(255,255,255,.25);color:#fff;background:rgba(255,255,255,.04)}
+    .trust-row{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;color:#dbe5f2;font-size:13px}
+    .trust-row strong{display:block;color:#fff;font-size:15px}
+    .hero-card{background:#fff;color:var(--text);border-radius:24px;padding:30px;box-shadow:0 25px 70px rgba(0,0,0,.25)}
+    .hero-card .mini-label{color:var(--blue);font-weight:900;font-size:12px;text-transform:uppercase;letter-spacing:1.3px}
+    .hero-card h2{font-size:26px;line-height:1.2;margin:7px 0 18px}
+    .check-list{list-style:none}
+    .check-list li{padding:10px 0;border-bottom:1px solid var(--line);display:flex;gap:10px}
+    .check-list li:last-child{border-bottom:0}
+    .check{color:var(--green);font-weight:900}
+    .hero-card .card-note{margin-top:15px;color:var(--muted);font-size:13px}
+    section{padding:76px 0}
+    .section-head{text-align:center;max-width:760px;margin:0 auto 42px}
+    .kicker{color:var(--blue);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1.7px}
+    .section-title{font-size:clamp(30px,4vw,44px);line-height:1.12;letter-spacing:-1px;margin:8px 0 12px}
+    .section-sub{color:var(--muted);font-size:16px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 8px 30px rgba(15,23,42,.04);transition:.2s}
+    .service:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .service-icon{width:48px;height:48px;border-radius:14px;background:#eff6ff;display:grid;place-items:center;font-size:24px;margin-bottom:16px}
+    .service h3{font-size:19px;margin-bottom:7px}
+    .service p{color:var(--muted);font-size:14px}
+    .service a{display:inline-block;margin-top:13px;color:var(--blue);font-size:13px;font-weight:800}
+    .business{background:#fff}
+    .business-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}
+    .business-panel{background:linear-gradient(145deg,#0b1220,#17243c);color:#fff;border-radius:24px;padding:34px}
+    .business-panel h2{font-size:34px;line-height:1.1;margin:8px 0 15px}
+    .business-panel p{color:#cbd5e1}
+    .business-list{margin-top:22px;display:grid;gap:10px}
+    .business-list div{display:flex;gap:10px;align-items:flex-start;color:#e5edf7}
+    .business-list b{color:#fff}
+    .partner-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+    .partner{border:1px solid var(--line);border-radius:17px;padding:21px;background:#fafbfc}
+    .partner strong{display:block;margin-bottom:5px}
+    .partner span{font-size:14px;color:var(--muted)}
+    .process{background:var(--light)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px}
+    .step-num{width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:900;margin-bottom:15px}
+    .step h3{font-size:17px;margin-bottom:7px}
+    .step p{font-size:14px;color:var(--muted)}
+    .areas{background:#fff}
+    .area-box{background:#f8fafc;border:1px solid var(--line);border-radius:20px;padding:30px;text-align:center}
+    .area-tags{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin-top:20px}
+    .tag{background:#fff;border:1px solid #dfe4ec;border-radius:999px;padding:8px 13px;font-size:13px;font-weight:700}
+    .proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .proof-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:27px}
+    .proof-card h3{margin-bottom:8px}
+    .proof-card p{color:var(--muted);font-size:14px}
+    .photo-placeholder{min-height:180px;border-radius:16px;background:linear-gradient(135deg,#dbeafe,#f8fafc);display:grid;place-items:center;text-align:center;color:#526078;padding:25px;font-weight:700;margin-top:18px}
+    .faq{background:#fff}
+    .faq-grid{max-width:850px;margin:auto;display:grid;gap:12px}
+    details{background:#f8fafc;border:1px solid var(--line);border-radius:14px;padding:17px 19px}
+    summary{cursor:pointer;font-weight:800}
+    details p{color:var(--muted);font-size:14px;margin-top:10px;padding-right:20px}
+    .cta{padding:30px 0 78px;background:#fff}
+    .cta-box{background:linear-gradient(135deg,var(--blue2),var(--blue));color:#fff;border-radius:25px;padding:45px;display:flex;justify-content:space-between;align-items:center;gap:30px}
+    .cta-box h2{font-size:36px;line-height:1.1}
+    .cta-box p{color:#dbeafe;margin-top:8px}
+    footer{background:#070d18;color:#aeb8c8;padding:35px 0 90px}
+    .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:35px}
+    footer h3{color:#fff;font-size:16px;margin-bottom:10px}
+    footer p,footer a{font-size:13px}
+    footer a:hover{color:#fff}
+    .footer-bottom{border-top:1px solid #1d2939;margin-top:28px;padding-top:20px;font-size:12px;display:flex;justify-content:space-between;gap:15px}
+    .floating-wa{position:fixed;right:18px;bottom:18px;z-index:100;background:var(--green);color:#fff;border-radius:999px;padding:14px 18px;font-weight:900;box-shadow:0 14px 30px rgba(22,163,74,.35);display:flex;gap:8px;align-items:center}
+    @media(max-width:900px){
+      .navlinks{display:none}
+      .hero-grid,.business-grid{grid-template-columns:1fr}
+      .services{grid-template-columns:1fr 1fr}
+      .steps{grid-template-columns:1fr 1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:620px){
+      .topbar{display:none}
+      nav{min-height:68px}
+      .logo img{width:43px;height:43px}
+      .logo-main{font-size:16px}
+      .hero{padding:55px 0 62px}
+      h1{letter-spacing:-1.4px}
+      .hero-lead{font-size:17px}
+      section{padding:58px 0}
+      .services,.partner-grid,.proof-grid,.footer-grid{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr}
+      .cta-box{padding:30px 24px;display:block}
+      .cta-box h2{font-size:29px}
+      .hero-card{padding:23px}
+      .floating-wa{left:14px;right:14px;justify-content:center;bottom:14px}
+      .footer-bottom{display:block}
+      .footer-bottom div+div{margin-top:8px}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Tarragona Servicios 24",
+    "description":"Limpieza, mantenimiento, montajes, portes y pequeños servicios para particulares y empresas en Tarragona y alrededores.",
+    "telephone":"+34644283087",
+    "areaServed":"Tarragona y alrededores",
+    "url":"https://juanamador731-png.github.io/Tarragona-servicios-/"
+  }
+  </script>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>📍 Tarragona y alrededores</span>
+      <span>💬 Presupuesto por WhatsApp · Atención directa</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a class="logo" href="#inicio" aria-label="Tarragona Servicios 24">
+          <img src="logo.svg" alt="Tarragona Servicios 24">
+          <div>
+            <div class="logo-main">Tarragona Servicios 24</div>
+            <div class="logo-sub">LIMPIEZA · MANTENIMIENTO · SERVICIOS</div>
+          </div>
+        </a>
+        <div class="navlinks">
+          <a href="#servicios">Servicios</a>
+          <a href="#empresas">Empresas</a>
+          <a href="#como-trabajamos">Cómo trabajamos</a>
+          <a href="#contacto" class="nav-cta">Pedir presupuesto</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Tarragona · Particulares · Empresas</div>
+          <h1>Un equipo para dejarlo <span>todo a punto.</span></h1>
+          <p class="hero-lead">Limpieza, mantenimiento, montajes, portes y pequeños servicios para viviendas, locales y negocios. Cuéntanos qué necesitas y valoramos el trabajo.</p>
+
+          <div class="buttons">
+            <a class="btn btn-green" href="https://wa.me/34644283087?text=Hola%2C%20quiero%20pedir%20presupuesto%20a%20Tarragona%20Servicios%2024" target="_blank" rel="noopener">💬 Pedir presupuesto</a>
+            <a class="btn btn-outline" href="#servicios">Ver servicios →</a>
+          </div>
+
+          <div class="trust-row">
+            <div><strong>👥 Equipo de 2</strong>Trabajo coordinado</div>
+            <div><strong>📍 Tarragona</strong>Zona y alrededores</div>
+            <div><strong>💬 WhatsApp</strong>Contacto directo</div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="mini-label">Lo que hacemos</div>
+          <h2>Soluciones prácticas para tu casa o negocio</h2>
+          <ul class="check-list">
+            <li><span class="check">✓</span><span>Limpieza de viviendas y fin de alquiler</span></li>
+            <li><span class="check">✓</span><span>Locales, restaurantes y oficinas</span></li>
+            <li><span class="check">✓</span><span>Comunidades y mantenimiento</span></li>
+            <li><span class="check">✓</span><span>Montaje de muebles y pequeños trabajos</span></li>
+            <li><span class="check">✓</span><span>Portes y ayuda en pequeñas mudanzas</span></li>
+            <li><span class="check">✓</span><span>Vaciados y puesta a punto</span></li>
+          </ul>
+          <p class="card-note">¿No sabes si podemos hacerlo? Escríbenos y lo valoramos contigo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Nuestros servicios</div>
+          <h2 class="section-title">Un solo contacto para diferentes necesidades</h2>
+          <p class="section-sub">Nos adaptamos al tipo de trabajo, al espacio y a lo que necesites conseguir.</p>
+        </div>
+
+        <div class="services">
+          <article class="service"><div class="service-icon">🧹</div><h3>Limpieza de viviendas</h3><p>Limpieza general, cocina, baños, suelos, terrazas, polvo y puesta a punto.</p><a href="#contacto">Solicitar presupuesto →</a></article>
+          <article class="service"><div class="service-icon">🏠</div><h3>Fin de alquiler</h3><p>Limpieza para entregar o preparar una vivienda después de una mudanza o cambio de inquilino.</p><a href="#contacto">Solicitar presupuesto →</a></article>
+          <article class="service"><div class="service-icon">🏢</div><h3>Oficinas y negocios</h3><p>Servicios puntuales o periódicos para mantener espacios de trabajo y atención al público.</p><a href="#contacto">Solicitar presupuesto →</a></article>
+          <article class="service"><div class="service-icon">🍽️</div><h3>Restaurantes y locales</h3><p>Limpiezas profundas de sala, baños, cocina y zonas que necesitan una puesta a punto.</p><a href="#contacto">Solicitar presupuesto →</a></article>
+          <article class="service"><div class="service-icon">🏘️</div><h3>Comunidades</h3><p>Limpieza y mantenimiento de zonas comunes, escaleras, rellanos y otras necesidades.</p><a href="#contacto">Solicitar presupuesto →</a></article>
+          <article class="service"><div class="service-icon">🛠️</div><h3>Montajes y pequeños trabajos</h3><p>Montaje de muebles y tareas sencillas que necesites resolver en casa o en un local.</p><a href="#contacto">Solicitar presupuesto →</a></article>
+          <article class="service"><div class="service-icon">🚚</div><h3>Portes y pequeñas mudanzas</h3><p>Ayuda con cajas, muebles y desplazamientos de objetos según las características del servicio.</p><a href="#contacto">Solicitar presupuesto →</a></article>
+          <article class="service"><div class="service-icon">📦</div><h3>Vaciados y puesta a punto</h3><p>Ayuda en vaciados y limpieza posterior para dejar el espacio preparado.</p><a href="#contacto">Solicitar presupuesto →</a></article>
+          <article class="service"><div class="service-icon">🪟</div><h3>Trabajos complementarios</h3><p>Cristales, terrazas, organización y otras tareas que puedan formar parte de la puesta a punto.</p><a href="#contacto">Consultar →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="empresas" class="business">
+      <div class="container business-grid">
+        <div class="business-panel">
+          <div class="kicker" style="color:#93c5fd">Para empresas y profesionales</div>
+          <h2>¿Necesitas un equipo de apoyo?</h2>
+          <p>Podemos colaborar con negocios que necesiten servicios puntuales o recurrentes y un contacto directo para resolver trabajos.</p>
+          <div class="business-list">
+            <div><span>✓</span><span><b>Inmobiliarias</b> · viviendas entre inquilinos y puesta a punto</span></div>
+            <div><span>✓</span><span><b>Restaurantes</b> · limpiezas profundas y mantenimiento</span></div>
+            <div><span>✓</span><span><b>Comunidades</b> · limpieza de zonas comunes</span></div>
+            <div><span>✓</span><span><b>Reformas</b> · limpieza y preparación de espacios</span></div>
+            <div><span>✓</span><span><b>Oficinas y alojamientos</b> · servicios periódicos</span></div>
+          </div>
+          <div class="buttons">
+            <a class="btn btn-green" href="https://wa.me/34644283087?text=Hola%2C%20soy%20una%20empresa%20y%20quiero%20informaci%C3%B3n%20sobre%20colaborar%20con%20vosotros" target="_blank" rel="noopener">💼 Hablar de colaboración</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-head" style="text-align:left;margin:0 0 25px">
+            <div class="kicker">Colaboraciones</div>
+            <h2 class="section-title">Pensado para relaciones de trabajo recurrentes</h2>
+            <p class="section-sub">Si tienes varias viviendas, locales o servicios durante el mes, podemos estudiar una forma de trabajo que os resulte cómoda.</p>
+          </div>
+          <div class="partner-grid">
+            <div class="partner"><strong>🏠 Inmobiliarias</strong><span>Limpiezas de entrada y salida, viviendas vacías y preparación para visitas.</span></div>
+            <div class="partner"><strong>🍽️ Hostelería</strong><span>Limpiezas profundas y apoyo en momentos de puesta a punto.</span></div>
+            <div class="partner"><strong>🏢 Oficinas</strong><span>Mantenimiento periódico y servicios puntuales.</span></div>
+            <div class="partner"><strong>🏘️ Administradores</strong><span>Comunidades y trabajos programados.</span></div>
+            <div class="partner"><strong>🏗️ Reformas</strong><span>Limpieza y preparación de espacios al finalizar trabajos.</span></div>
+            <div class="partner"><strong>🏖️ Alojamientos</strong><span>Puesta a punto entre estancias y temporadas.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-trabajamos" class="process">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Cómo trabajamos</div>
+          <h2 class="section-title">Fácil, claro y sin vueltas</h2>
+          <p class="section-sub">Nos cuentas lo que necesitas y buscamos la mejor forma de realizarlo.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="step-num">1</div><h3>Nos escribes</h3><p>Envíanos por WhatsApp qué necesitas, la zona y, si puedes, algunas fotos.</p></div>
+          <div class="step"><div class="step-num">2</div><h3>Valoramos</h3><p>Revisamos el trabajo y te indicamos si necesitamos más información.</p></div>
+          <div class="step"><div class="step-num">3</div><h3>Presupuesto</h3><p>Te damos un precio orientativo o presupuesto según las características del servicio.</p></div>
+          <div class="step"><div class="step-num">4</div><h3>Lo realizamos</h3><p>Acordamos día y hora y nos ponemos manos a la obra.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="areas">
+      <div class="container">
+        <div class="area-box">
+          <div class="kicker">Zona de servicio</div>
+          <h2 class="section-title" style="font-size:32px">Tarragona y alrededores</h2>
+          <p class="section-sub">Consulta disponibilidad si estás fuera de nuestra zona habitual. Valoramos cada desplazamiento según el servicio.</p>
+          <div class="area-tags">
+            <span class="tag">Tarragona</span><span class="tag">Pallaresos</span><span class="tag">Reus</span><span class="tag">Vila-seca</span><span class="tag">Salou</span><span class="tag">Torredembarra</span><span class="tag">Altafulla</span><span class="tag">El Vendrell</span><span class="tag">Calafell</span><span class="tag">Cunit</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Trabajos y confianza</div>
+          <h2 class="section-title">Queremos que veas lo que hacemos</h2>
+          <p class="section-sub">Aquí podemos ir incorporando fotos reales de trabajos realizados y opiniones verificables de clientes.</p>
+        </div>
+        <div class="proof-grid">
+          <div class="proof-card">
+            <h3>📸 Trabajos realizados</h3>
+            <p>Cuando tengamos más fotografías, las añadimos aquí con ejemplos de antes y después. Así los futuros clientes pueden valorar el resultado real.</p>
+            <div class="photo-placeholder">Espacio preparado para añadir fotografías reales de vuestros trabajos.</div>
+          </div>
+          <div class="proof-card">
+            <h3>⭐ Opiniones de clientes</h3>
+            <p>Podemos añadir aquí las opiniones reales que vayáis recibiendo. No inventamos reseñas: cada comentario debe corresponder a un cliente real.</p>
+            <div class="photo-placeholder">Espacio preparado para incorporar reseñas reales.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Preguntas frecuentes</div>
+          <h2 class="section-title">Antes de pedir presupuesto</h2>
+        </div>
+        <div class="faq-grid">
+          <details><summary>¿Trabajáis con empresas?</summary><p>Sí. Podemos valorar colaboraciones con inmobiliarias, restaurantes, oficinas, comunidades, alojamientos y empresas que necesiten servicios puntuales o recurrentes.</p></details>
+          <details><summary>¿Podéis hacer una limpieza profunda?</summary><p>Sí, podemos valorar limpiezas profundas de viviendas, locales y otros espacios según el estado, tamaño y tareas necesarias.</p></details>
+          <details><summary>¿Hacéis trabajos fuera de Tarragona?</summary><p>Trabajamos principalmente en Tarragona y localidades cercanas. Para otros desplazamientos, consultadnos y valoramos disponibilidad y desplazamiento.</p></details>
+          <details><summary>¿Cómo puedo pedir presupuesto?</summary><p>Lo más rápido es escribirnos por WhatsApp indicando qué necesitas, dónde es y, si es posible, enviando fotografías.</p></details>
+          <details><summary>¿Puedo contratar un servicio recurrente?</summary><p>Sí. Si necesitas limpieza o mantenimiento semanal, quincenal o mensual, podemos estudiar una propuesta adaptada a tus necesidades.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h2>¿Tienes un trabajo pendiente?</h2>
+            <p>Cuéntanos qué necesitas y hablamos sin compromiso.</p>
+          </div>
+          <div class="buttons">
+            <a class="btn btn-green" href="https://wa.me/34644283087?text=Hola%2C%20quiero%20pedir%20presupuesto%20a%20Tarragona%20Servicios%2024" target="_blank" rel="noopener">💬 WhatsApp</a>
+            <a class="btn btn-primary" href="tel:+34644283087">📞 Llamar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Tarragona Servicios 24</h3>
+          <p>Limpieza, mantenimiento, montajes, portes y servicios para particulares y empresas en Tarragona y alrededores.</p>
+        </div>
+        <div>
+          <h3>Servicios</h3>
+          <p><a href="#servicios">Limpieza de viviendas</a></p>
+          <p><a href="#servicios">Empresas y locales</a></p>
+          <p><a href="#servicios">Montajes</a></p>
+          <p><a href="#servicios">Portes</a></p>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <p><a href="https://wa.me/34644283087" target="_blank" rel="noopener">WhatsApp: 644 283 087</a></p>
+          <p><a href="tel:+34644283087">Llamar directamente</a></p>
+          <p>Tarragona y alrededores</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Tarragona Servicios 24</div>
+        <div>Presupuesto personalizado · Contacto directo</div>
+      </div>
+    </div>
+  </footer>
+
+  <a class="floating-wa" href="https://wa.me/34644283087?text=Hola%2C%20quiero%20pedir%20presupuesto%20a%20Tarragona%20Servicios%2024" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">💬 Pedir presupuesto</a>
+</body>
+</html>
