@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+<rect width="240" height="240" rx="48" fill="#17202a"/>
+<circle cx="120" cy="112" r="70" fill="#fff"/>
+<path d="M82 95h76v47c0 18-14 32-32 32h-12c-18 0-32-14-32-32V95z" fill="#17202a"/>
+<path d="M70 94h100v18H70zM92 82h56v13H92z" fill="#17202a"/>
+<circle cx="104" cy="120" r="6" fill="#fff"/><circle cx="136" cy="120" r="6" fill="#fff"/>
+<path d="M98 143c12 9 32 9 44 0" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+<text x="120" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#fff">TS24</text>
+</svg>
