@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Limpieza de viviendas, portes, montajes y pequeños servicios en Tarragona y alrededores. Presupuesto sin compromiso.">
+  <title>Tarragona Servicios | Limpieza, Portes y Montajes</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;color:#17202a;background:#f7f8fa;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1100px,92%);margin:auto}
+    header{background:#fff;border-bottom:1px solid #e7e9ed;position:sticky;top:0;z-index:10}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:800}.logo img{width:58px;height:58px;object-fit:contain;border-radius:10px}
+    .logo span{display:block;font-size:11px;font-weight:500;color:#667085;letter-spacing:1px}
+    .navlinks{display:flex;gap:22px;font-size:14px}
+    .hero{background:#17202a;color:#fff;padding:80px 0}
+    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center}
+    .eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:2px;opacity:.75;margin-bottom:12px}
+    h1{font-size:clamp(38px,6vw,64px);line-height:1.05;margin-bottom:22px}
+    .hero p{font-size:19px;max-width:650px;color:#dce2e8}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:14px 21px;border-radius:10px;font-weight:700}
+    .btn-primary{background:#fff;color:#17202a}
+    .btn-outline{border:1px solid #8c98a5;color:#fff}
+    .card{background:#fff;color:#17202a;border-radius:18px;padding:28px;box-shadow:0 16px 45px rgba(0,0,0,.18)}
+    .card h3{margin-bottom:10px}
+    .card li{list-style:none;padding:9px 0;border-bottom:1px solid #eee}
+    section{padding:70px 0}
+    .section-title{text-align:center;font-size:34px;margin-bottom:12px}
+    .section-sub{text-align:center;color:#667085;max-width:680px;margin:0 auto 38px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{background:#fff;border:1px solid #e6e8eb;border-radius:15px;padding:25px}
+    .service .icon{font-size:28px;margin-bottom:12px}
+    .service h3{margin-bottom:7px}
+    .service p{color:#667085;font-size:15px}
+    .why{background:#fff}
+    .whygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .whyitem{text-align:center;padding:22px}
+    .whyitem strong{display:block;margin-bottom:5px}
+    .whyitem p{font-size:14px;color:#667085}
+    .contact{background:#eef1f4}
+    .contactbox{background:#17202a;color:#fff;border-radius:20px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:30px}
+    .contactbox p{color:#dce2e8;margin-top:7px}
+    footer{background:#111820;color:#aeb8c2;padding:28px 0;font-size:13px}
+    footer .container{display:flex;justify-content:space-between;gap:20px}
+    @media(max-width:800px){
+      .navlinks{display:none}
+      .hero-grid,.services{grid-template-columns:1fr}
+      .whygrid{grid-template-columns:1fr 1fr}
+      .hero{padding:55px 0}
+      section{padding:55px 0}
+      .contactbox{display:block}
+      .contactbox .buttons{margin-top:20px}
+      footer .container{display:block}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#"><img src="logo.svg" alt="Tarragona Servicios 24"><span>TARRAGONA SERVICIOS 24<small style="display:block;font-size:10px;font-weight:500;color:#667085;letter-spacing:1px">LIMPIEZA · PORTES · MONTAJES</small></span></a>
+      <div class="navlinks">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Por qué nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Tarragona y alrededores</div>
+      <h1>Tu casa, piso o pequeño trabajo. Nos encargamos.</h1>
+      <p>Limpieza de viviendas, preparación de pisos, portes, montajes y pequeños servicios a domicilio. Atención cercana y presupuesto sin compromiso.</p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="https://wa.me/34644283087?text=Hola,%20quiero%20pedir%20presupuesto" target="_blank">Pedir presupuesto por WhatsApp</a>
+        <a class="btn btn-outline" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Servicios principales</h3>
+      <ul>
+        <li>✓ Limpieza de hogares y pisos</li>
+        <li>✓ Limpieza para inmobiliarias</li>
+        <li>✓ Portes y ayuda en mudanzas</li>
+        <li>✓ Montaje de muebles</li>
+        <li>✓ Pequeños arreglos</li>
+        <li>✓ Limpieza básica de vehículos</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="container">
+    <h2 class="section-title">¿Qué podemos hacer por ti?</h2>
+    <p class="section-sub">Un servicio flexible para particulares, propietarios, inmobiliarias y pequeños negocios.</p>
+    <div class="services">
+      <article class="service"><div class="icon">🧹</div><h3>Limpieza de viviendas</h3><p>Limpieza general, baños, cocina, suelos, terrazas, cristales y puesta a punto.</p></article>
+      <article class="service"><div class="icon">🏠</div><h3>Inmobiliarias</h3><p>Preparación de viviendas entre inquilinos, antes de enseñar un piso o después de una mudanza.</p></article>
+      <article class="service"><div class="icon">🚚</div><h3>Portes pequeños</h3><p>Recogida y entrega de objetos, cajas, muebles y ayuda en pequeñas mudanzas.</p></article>
+      <article class="service"><div class="icon">🔧</div><h3>Montajes</h3><p>Montaje de muebles y tareas sencillas del hogar según el trabajo solicitado.</p></article>
+      <article class="service"><div class="icon">🚗</div><h3>Limpieza de vehículos</h3><p>Limpieza interior básica y puesta a punto para particulares.</p></article>
+      <article class="service"><div class="icon">📦</div><h3>Vaciados y puesta a punto</h3><p>Ayuda con vaciados, organización y limpieza posterior, según las necesidades del cliente.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="nosotros" class="why">
+  <div class="container">
+    <h2 class="section-title">Un servicio sencillo y directo</h2>
+    <p class="section-sub">Queremos que pedir ayuda para un trabajo doméstico sea fácil: explicas qué necesitas, te damos un presupuesto y acordamos día y hora.</p>
+    <div class="whygrid">
+      <div class="whyitem"><strong>Presupuesto</strong><p>Sin compromiso antes de realizar el trabajo.</p></div>
+      <div class="whyitem"><strong>Vehículo propio</strong><p>Para desplazamientos y pequeños portes.</p></div>
+      <div class="whyitem"><strong>Trato cercano</strong><p>Contacto directo por WhatsApp.</p></div>
+      <div class="whyitem"><strong>Tarragona</strong><p>Trabajamos en Tarragona y localidades cercanas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="contact">
+  <div class="container">
+    <div class="contactbox">
+      <div>
+        <h2>¿Necesitas un presupuesto?</h2>
+        <p>Cuéntanos qué necesitas y te respondemos para valorar el trabajo.</p>
+      </div>
+      <div class="buttons">
+        <a class="btn btn-primary" href="https://wa.me/34644283087?text=Hola,%20quiero%20pedir%20presupuesto" target="_blank">Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div>© 2026 Tarragona Servicios</div>
+    <div>Tarragona y alrededores · Presupuesto sin compromiso</div>
+  </div>
+</footer>
+</body>
+</html>
